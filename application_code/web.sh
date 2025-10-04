@@ -10,9 +10,9 @@ sudo chown -R ec2-user:ec2-user /home/ec2-user
 sudo chmod -R 755 /home/ec2-user
 
 sudo rm -rf 3-tier-aws-terraform-packer-statelock-project
-git clone https://github.com/harishnshetty/3-tier-aws-terraform-packer-statelock-project.git
+git clone https://github.com/cxharles/3tier_aws_packer_project.git
 
-cp -rf 3-tier-aws-terraform-packer-statelock-project/application_code/web_files .
+cp -rf 3tier_aws_packer_project/application_code/web_files .
 
 cd /home/ec2-user/web_files
 
@@ -28,7 +28,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Sync latest code
-rsync -av --delete ~/3-tier-aws-terraform-packer-statelock-project/application-code/web_files/ ~/web_files/
+rsync -av --delete ~/3tier_aws_packer_project/application-code/web_files/ ~/web_files/
 
 cd ~/web_files
 npm install
