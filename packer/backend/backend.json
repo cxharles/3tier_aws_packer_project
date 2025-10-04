@@ -6,7 +6,7 @@
     {
       "type": "amazon-ebs",
       "region": "{{user `aws_region`}}",
-      "source_ami": "ami-0533167fcff018a86",
+      "source_ami": "ami-029c5475368ac7adc",
       "instance_type": "t3.micro",
       "ssh_username": "ec2-user",
       "ami_name": "three-tier-backend-al2023-{{timestamp}}",
