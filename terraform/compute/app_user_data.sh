@@ -8,9 +8,9 @@ dnf install -y nodejs npm
 
 echo "========== Cloning application repository =========="
 cd /home/ec2-user
-git clone https://github.com/harishnshetty/3-tier-aws-terraform-packer-statelock-project.git || true
+git clone https://github.com/cxharles/3tier_aws_packer_project.git || true
 
-APP_DIR=/home/ec2-user/3-tier-aws-terraform-packer-statelock-project/application_code
+APP_DIR=/home/ec2-user/3tier_aws_packer_project/application_code
 
 echo "========== Configuring DbConfig.js =========="
 # Replace placeholders with Terraform-provided values
