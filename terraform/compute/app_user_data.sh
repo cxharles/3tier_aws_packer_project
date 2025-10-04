@@ -64,8 +64,8 @@ initialize_database
 
 
 echo "========== Installing Node.js app dependencies =========="
-cp -rf /home/ec2-user/3tier_aws_packer_project/application_code/app_files  /home/ec2-user
-cp -rf /home/ec2-user/3tier_aws_packer_project/application_code/app.sh  /home/ec2-user
+cp -rf /home/ec2-user/3tier_aws_packer_project/application_code/app_files /home/ec2-user
+cp -rf /home/ec2-user/3tier_aws_packer_project/application_code/app.sh /home/ec2-user
 chmod +x /home/ec2-user/app.sh
 
 
