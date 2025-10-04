@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-AWS_REGION="ap-south-1"
+AWS_REGION="ca-central-1"
 AMI_FILE="../../terraform/compute/ami_ids/frontend_ami.txt"
 
 mkdir -p ../../terraform/compute/ami_ids

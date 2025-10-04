@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-AWS_REGION="ap-south-1"
+AWS_REGION="ca-central-1"
 AMI_FILE="../../terraform/compute/ami_ids/backend_ami.txt"
 LOG_FILE="packer_build.log"
 
@@ -15,7 +15,7 @@ mkdir -p ../../terraform/compute/ami_ids
 packer build -var aws_region=$AWS_REGION backend.json 2>&1 | tee $LOG_FILE
 
 # Extract AMI ID from log file
-AMI_ID=$(grep -E 'ap-south-1: ami-' $LOG_FILE | awk '{print $2}' | cut -d: -f2)
+AMI_ID=$(grep -E 'ca-central-1: ami-' $LOG_FILE | awk '{print $2}' | cut -d: -f2)
 
 if [ -n "$AMI_ID" ]; then
   echo "✅ Backend AMI created successfully: $AMI_ID"

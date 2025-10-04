@@ -28,7 +28,7 @@ check_command jq
 # ================================================================
 # Variables
 # ================================================================
-export AWS_REGION="ap-south-1"
+export AWS_REGION="ca-central-1"
 export TF_VAR_aws_region=$AWS_REGION
 export TF_VAR_key_name="new-keypair"
 

@@ -1,4 +1,4 @@
-aws_region = "ap-south-1"
+aws_region = "ca-central-1"
 environment = "dev"
 project_name = "three-tier-app"
 
@@ -13,4 +13,4 @@ db_allocated_storage = 20
 db_storage_type = "gp2"
 
 # Terraform State Bucket
-terraform_state_bucket = "three-tier-terrafrom-s3-8745" 
+terraform_state_bucket = "terraform-eks-state1986" 

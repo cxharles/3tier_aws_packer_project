@@ -1,4 +1,4 @@
-aws_region = "ap-south-1"
+aws_region = "ca-central-1"
 environment = "prod"
 project_name = "three-tier-app"
 
@@ -20,4 +20,4 @@ app_min_size = 1
 
 db_password = "password"
 # Terraform State Bucket
-terraform_state_bucket = "three-tier-terrafrom-s3-8745" 
+terraform_state_bucket = "terraform-eks-state1986" 

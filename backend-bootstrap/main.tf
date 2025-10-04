@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "ca-central-1"
 }
 
 resource "aws_dynamodb_table" "tf_locks" {
@@ -19,7 +19,7 @@ resource "aws_dynamodb_table" "tf_locks" {
 }
 
 resource "aws_s3_bucket" "tf_state" {
-  bucket = "three-tier-terrafrom-s3-8745"
+  bucket = "terraform-eks-state1986"
   
   lifecycle {
     prevent_destroy = true
